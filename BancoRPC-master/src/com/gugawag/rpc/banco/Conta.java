@@ -1,6 +1,6 @@
 package com.gugawag.rpc.banco;
 public class Conta {
-    private String numero;
+    String numero;
     private double saldo;
 
     public Conta(String numero, double saldo){
@@ -8,6 +8,18 @@ public class Conta {
         this.saldo = saldo;
     }
 
-    
+    public Double getSaldo(){
+        return this.saldo;
+    }
 
+    public String getNumero(){
+        return this.numero;
+    }
+
+
+    @Override
+    public String toString() {
+      
+        return "Número: " + this.numero + "\nSaldo: " + this.saldo;
+    }
 }

@@ -5,12 +5,11 @@ import java.rmi.AlreadyBoundException;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
-import java.util.ArrayList;
 
 public class AppBanco {
+
     public static void main(String[] args) throws RemoteException, MalformedURLException, AlreadyBoundException {
 
-        
         // Cria uma instância do serviço com.gugawag.rpc.banco.BancoServiceServer...
         BancoServiceIF bancoService = new BancoServiceServer();
 
